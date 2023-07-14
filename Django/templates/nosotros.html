@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/nosotros.css' %}">
+<link rel="stylesheet" href="{% static '/css/index_style.css' %}">
+<script type="module" src="{% static '/js/api.js' %}"></script>
+{% endblock %} 
+
+{% block content%}
+<!-- Nosotros -->
+<div class="subtitulo_nosotros">
+    <h2 class="subti-titulo"> Sobre nosotros y Nuestra historia </h2>
+    <h3 class="subti-descripcion">CaRent Argentina</h3>
+</div>
+
+
+<!-- texto -->
+<main class="historia">
+    <div class="div-page-content">
+        <div class="titulo-texto-historia">
+            <h2>Donde haya un viajero estamos nosotros </h2>
+        </div>
+        <div>
+            <p>CaRent Argentina es una compañía líder en alquiler de autos. Miles de personas en todo el mundo eligen
+                disfrutar sus viajes en la comodidad y confort de nuestros vehículos. En el año 2000 The CaRent
+                Corporation eligió como licencia maestra a la rentadora emblema argentina Annie Millet por su expertise
+                y éxito en el mercado local.
+
+                Transformamos viajes en experiencias inolvidables. CaRent Argentina opera desde hace más de 30 años en
+                las principales ciudades y aeropuertos del país, brindando al pasajero la posibilidad de manejar un
+                vehículo en su destino elegido.
+
+                Nuestro servicio incluye kilometraje ilimitado y las opciones de cobertura mas flexibles del mercado,
+                para que cada uno disfrute del viaje con total autonomía y tranquilidad. Ademas contamos con tarifas
+                promocionales que permiten tomar el vehículo en una ciudad y devolverlo en otra sin cargo extra –
+                consulte destinos y disponibilidad del servicio al momento de solicitar la reserva.
+
+                Disponemos de una amplia flota de vehículos que se adaptan a las necesidades de movilidad de todo tipo
+                de pasajeros. Ya sea para vacaciones familiares, viajes con amigos, escapadas en pareja o por negocios.
+                En CaRent Argentina está el vehículo indicado para cada uno.
+
+                Hoy seguimos escribiendo la historia de la industria del rent a car con constante innovación en el
+                servicio.
+
+                Subite a un viaje diferente con CaRent Argentina.</p>
+        </div>
+    </div>
+</main>
+
+<!-- comentarios -->
+<div class="comentarios">
+    <div class="comentarios_titulo">
+        <h1>Clientes dicen...</h1>
+    </div>
+    <div id="comentarios_json"></div>
+</div>
+
+{% endblock %}

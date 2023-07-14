@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/lista_alquiler.css' %}">
+<link rel="stylesheet" href="{% static '/css/index_style.css' %}">
+{% endblock %}
+{% block title %}
+<div class="principal">
+  <h2 class="principal-titulo"> Nuestros autos</h2>
+  <p class="principal-descripcion">
+    Con más de 15 años en el mercado, somos líderes en alquiler de autos. <br> Miles de personas en Argentina y turistas
+    de todo el mundo nos eligen diariamente para disfrutar sus viajes en la comodidad y confort de nuestros vehículos.
+    <br> No conozcas tu destino, recorrelo. Lo más importante es disfrutar el camino.
+  </p>
+</div>
+{% endblock %}
+{% block content %}
+
+{% for automovil in automoviles %}
+    {{ automovil.nombre }}
+{% endfor %}
+<section class="contenido">
+    <div class="mostrador" id="mostrador">
+        <div class="fila">
+            {% for automovil in automoviles %}
+            <div class="item" onclick="cargar(this)">
+                <div class="contenedor-foto">
+                    <img src="{% static automovil.foto_automovil }" alt="">
+                </div>
+                <p class="descripcion">
+                    {{ automovil.descripcion_automovil }}
+                    <br> {{ automovil.marca_automovil.nombre }}
+                    <br> {{ automovil.categoria_automovil.nombre }}
+                    <br> {{ automovil.estado_automovil.nombre }}
+                </p>
+                <br> <span class="precio">${{ automovil.precio_automovil }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/index_style.css' %}">
+<link rel="stylesheet" href="/static/css/style.css">
+{% endblock %}
+
+{% block title %}
+<div class="principal">
+  <h2 class="principal-titulo"> Login </h2>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="principal">
+	<div class="contact-wrapper animated bounceInUp">
+		<div class="contact-form">
+            <h2> ¡Bienvenido!</h2>
+            <h3>Si ya sos usuario, ingresá desde aquí:</h3>
+            <form action="" method="POST" id="form" class="form">
+                <p class="form-p">
+                    <input type="text" id="nombre" class="form_input" name="name">
+                    <label for="" class="form_label">Usuario</label>
+                </p>
+                <p class="form-p">
+                    <input type="password" id="contraseña" class="form_input" name="comments"></input>
+                    <label for="" class="form_label">Contraseña</label>
+                </p>
+                <p class="block">
+                    <button type="submit" id="button" class="form_enviar" value="">Ingresar</button>
+                </p>
+                <p class="warnings" id="warning"></p>
+            </form>
+        
+        </div>
+        <div class="contact-info">
+            <h2>¿Aún no sos usuario?...¡Registrate!</h2>
+            <p>Aquí podrás:</p>
+            <p>Reservar el vehículo</p>
+            <p>Realizar un seguimiento del servicio que elegiste</p>
+            <p>Consultar destinos y disponibilidad</p>
+            <p>y mucho más!</p>
+            <p class="block">
+                <button type="submit" id="button" class="form_enviar" value="">Registrar</button>
+            </p>
+        </div>
+    </div>
+</div>
+<!--<form action="" method="POST" id="form" class="form">
+            <p class="form-p">
+                <input type="text" id="nombre" class="form_input" name="name">
+                <label for="" class="form_label">Nombre</label>
+            </p>
+            <p class="form-p">
+                <input type="email" id="email" class="form_input" name="email">
+                <label for="" class="form_label">Email</label>
+            </p>
+            <p class="form-p">
+                <input type="text" id="telefono" class="form_input" name="phone">
+                <label for="" class="form_label">Contacto</label>
+            </p>
+            <p class="block">
+                <textarea type="text" id="comentario" rows="3" class="form_input" name="comments"></textarea>
+                <label for="" class="form_label">Direccion</label>
+            </p>
+            <p class="block">
+                <textarea type="password" id="comentario" rows="3" class="form_input" name="comments"></textarea>
+                <label for="" class="form_label">Contraseña</label>
+            </p>
+            <p class="block">
+                <button type="submit" id="button" class="form_enviar" value="">Registrar</button>
+            </p>
+            <p class="warnings" id="warning"></p>
+
+        </form-->
+    
+    
+    
+    
+{% endblock %}

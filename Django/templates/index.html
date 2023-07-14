@@ -1,0 +1,144 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static '/css/index_style.css' %}">
+{% endblock %}
+
+{% block title %}
+<div class="principal">
+  <h2 class="principal-titulo"> Bienvenido a CaRent </h2>
+  <p class="principal-descripcion">
+    Con más de 15 años en el mercado, somos líderes en alquiler de autos. <br> Miles de personas en Argentina y turistas
+    de todo el mundo nos eligen diariamente para disfrutar sus viajes en la comodidad y confort de nuestros vehículos.
+    <br> No conozcas tu destino, recorrelo. Lo más importante es disfrutar el camino.
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Tips -->
+<main class="page-content">
+  <div class="div-page-content">
+    <div class="titulo-page-content">
+      <h2>Tips de viajeros</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="content">
+          <h2 class="titulo">Tené en cuenta qué tipo de vehiculo necesitás</h2>
+          <p class="copy">¿Vas a recorrer caminos de montaña o sólo autopistas? ¿Necesitás una camioneta, un auto
+            deportivo o un compacto?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="titulo">Alquilá tu auto con antelación</h2>
+          <p class="copy">Siempre es recomendable hacer tu reserva para alquilar un auto entre dos y tres semanas antes
+            de la partida.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Preguntas Frecuentes -->
+<div class="accordion" id="accordionExample">
+  <h2 class="titulo-page-content">Preguntas Frecuentes</h2>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+        aria-expanded="false" aria-controls="collapseOne">
+        ¿Cuál es el precio mínimo para alquilar un auto en Argentina?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        El precio mínimo para alquilar un vehículo en Argentina puede cambiar dependiendo del tipo de automóvil que se
+        rente y los servicios adicionales que se soliciten. En CaRent, contamos con una amplia selección de vehículos,
+        desde opciones económicas hasta servicios de alquiler de coches de lujo de alta gama. De esta forma, nuestros
+        clientes pueden elegir la opción que mejor se ajuste a sus necesidades y preferencias.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+        aria-expanded="false" aria-controls="collapseTwo">
+        ¿Puedo alquilar un auto por solo un día? ¿Existen plazos mínimos?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Sí, es posible alquilar un auto por un solo día en CaRent. No hay un plazo mínimo de alquiler, aunque es posible
+        que las tarifas de alquiler varíen según el plazo y el tipo de vehículo a alquilar.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+        aria-expanded="false" aria-controls="collapseThree">
+        ¿Qué incluye el servicio de alquiler de vehículos en Argentina?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        El servicio de alquiler de vehículos en Argentina incluye la cobertura básica para circular, asistencia en
+        carretera las 24 horas del día, seguro contra robo y daños a terceros, y kilometraje libre en la mayoría de los
+        casos. También se puede acceder a servicios adicionales, como sillas para bebés, GPS y conductor adicional,
+        entre otros, por un costo adicional.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+        aria-expanded="false" aria-controls="collapseFour">
+        ¿Por qué es recomendable alquilar un vehículo en Argentina?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Alquilar un vehículo en Argentina puede ser recomendable, por ejemplo, por la posibilidad de moverse con mayor
+        libertad y flexibilidad por el país, la comodidad que ofrece para desplazarse en viajes largos o en zonas
+        alejadas de las ciudades, y la opción de conocer diferentes lugares a tu propio ritmo.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+        aria-expanded="false" aria-controls="collapseFive">
+        ¿El precio del alquiler del auto en Argentina incluye cobertura de seguro?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Sí, la cobertura básica para circular está incluida en el precio del alquiler del vehículo.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+        aria-expanded="false" aria-controls="collapseSix">
+        ¿Cuál es el modelo de auto más alquilado en Argentina?
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        El modelo de auto más alquilado en Argentina puede variar dependiendo de la temporada y la actividad a realizar.
+        En CaRent contamos con una flota variada, la cual se ajusta a las necesidades y expectativas de nuestro cliente.
+        Al momento de realizar la reserva, nuestro personal puede asesorarte con respecto al vehículo que mejor se
+        adecúa a tu actividad.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+{% endblock %}

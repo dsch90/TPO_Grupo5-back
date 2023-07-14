@@ -1,0 +1,47 @@
+/* Navbar */
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+
+/* Footer */
+
+.my-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.pie-de-pagina {
+  display: flex;
+  align-self: center;
+  max-width: 362.5rem;
+  column-gap: 70px;
+  place-content: center;
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.623);
+}
+
+.dias-horarios,
+.parte-enlaces,
+.pie-de-pagina {
+  margin-top: 25px;
+}
+
+.adesarrolladoras {
+  text-decoration: none;
+  color: inherit;
+}
+
+.parte-enlaces {
+  display: flex;
+}
+
+.copyright {
+  margin-left: 50px;
+}

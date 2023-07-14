@@ -1,0 +1,82 @@
+.historia{
+    background:white;
+    border-radius: 15px;
+}
+
+.subtitulo_nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    text-align: center;
+    font-family: 'Amethysta';
+}
+.subti-titulo {
+    text-align: center;
+    letter-spacing: -1px;
+    text-shadow: 0 0 10px #fff8;
+    color: #1b1818;
+    margin: 0 0 0.5rem;
+    font-size: clamp(44px,5vw,64px);
+    font-weight: 700;
+  }
+
+
+.historia {
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: 'Amethysta';
+  }
+.titulo-texto-historia{
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    font-weight: 600;
+    margin: 20px;
+}
+.comentarios{
+    overflow-y: auto;   
+    width: auto;
+    height: 350px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.comentarios_contenedor{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    background:rgba(255, 255, 255, 0.418);
+}
+.comentarios_titulo{
+    width: 500px;
+    font-size: 2.9rem;
+    font-weight: 500;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-weight: 600;
+}
+.comentarios_caja{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px;
+    cursor:pointer;
+}
+.reseñas{
+    color:#000;
+}
+#email{
+    color:red;
+}
+#comentarios_json{
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/desarrolladoras.css">
+{% endblock %}
+{% block title %}
+<div class="principal">
+  <h2 class="principal-titulo"> Desarrolladoras</h2>
+  <p class="principal-descripcion">
+    Con más de 15 años en el mercado, somos líderes en alquiler de autos. <br> Miles de personas en Argentina y turistas
+    de todo el mundo nos eligen diariamente para disfrutar sus viajes en la comodidad y confort de nuestros vehículos.
+    <br> No conozcas tu destino, recorrelo. Lo más importante es disfrutar el camino.
+  </p>
+</div>
+{% endblock %}
+{% block content%}
+<!-- Info de desarrolladoras-->
+<section class="dev-info">
+    <div class="dev">
+        <div class="dev-foto">
+            <img src="{% static '/images/jimenaAdam.jpeg' %}" alt="dev1">
+        </div>
+        <div class="dev-contacto">
+            <h2>Jimena Adam</h2>
+            <img src="{% static '/images/gmail_vector.png' %}" alt="gmail" id="gmail">
+            <label for="gmail"><a class="enlaces-info"
+                    href="mailto:adamjimena@gmail.com">adamjimena@gmail.com</a></label><br>
+            <img src="{% static '/images/github_vector.png'%}" alt="github">
+            <label for="github"><a class="enlaces-info" href="https://github.com/JimeAdam">JimeAdam</a></label><br>
+            <img src="{% static '/images/linkedin_vector.png'%}" alt="linkedin">
+            <label for="linkedin"><a class="enlaces-info"
+                    href="https://www.linkedin.com/in/jimena-adam-5921b5277/">Jimena-adam-5921b5277</a></label>
+        </div>
+    </div>
+    <div class="dev">
+        <div class="dev-foto">
+            <img src="{% static '/images/deboraChamorro.jpeg' %}" alt="dev2">
+        </div>
+        <div class="dev-contacto">
+            <h2>Debora Chamorro</h2>
+            <img src="{% static '/images/gmail_vector.png' %}" alt="gmail" id="gmail">
+            <label for="gmail"><a class="enlaces-info"
+                    href="mailto:chamorrodebora016@gmail.com">chamorrodebora016@gmail.com</a></label><br>
+            <img src="{% static '/images/github_vector.png' %}" alt="github">
+            <label for="github"><a class="enlaces-info" href="https://github.com/dsch90">Dsch90</a></label><br>
+            <img src="{% static '/images/linkedin_vector.png' %}" alt="linkedin">
+            <label for="linkedin"><a class="enlaces-info"
+                    href="https://www.linkedin.com/in/debora-soledad-chamorro-8aab59235">Debora-Soledad-Chamorro</a></label>
+        </div>
+    </div>
+    <div class="dev">
+        <div class="dev-foto">
+            <img src="{% static '/images/MariaCenturion.jpg' %}" alt="dev3">
+        </div>
+        <div class="dev-contacto">
+            <h2>Maria Magdalena Centurion</h2>
+            <img src="{% static '/images/gmail_vector.png' %}" alt="gmail" id="gmail">
+            <label for="gmail"><a class="enlaces-info"
+                    href="mailto:centurionmalena94@gmail.com">centurionmalena94@gmail.com</a></label><br>
+            <img src="{% static '/images/github_vector.png' %}" alt="github">
+            <label for="github"><a class="enlaces-info"
+                    href="https://github.com/centurion-maria">Centurion-maria</a></label><br>
+            <img src="{% static '/images/linkedin_vector.png' %}" alt="linkedin">
+            <label for="linkedin"><a class="enlaces-info"
+                    href="https://www.linkedin.com/in/mariacenturion1994/">Mariacenturion1994</a></label>
+        </div>
+    </div>
+</section>
+{% endblock %}
